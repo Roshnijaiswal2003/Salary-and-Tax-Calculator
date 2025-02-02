@@ -1,0 +1,29 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary and Tax Calculator</title>
+    <link rel="stylesheet" href="salary&tax.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Salary and Tax Calculator</h1>
+        <form id="salaryForm">
+            <label for="salary">Enter your salary:</label>
+            <input type="number" id="salary" name="salary" required>
+            <button type="button" onclick="calculateTax()">Calculate</button>
+        </form>
+        <div id="results" class="hidden">
+            <p>Tax Amount: $<span id="taxAmount"></span></p>
+            <p>Net Salary: $<span id="netSalary"></span></p>
+        </div>
+    </div>
+    <script src="salary&tax.js"></script>
+</body>
+</html>
+
+
